@@ -21,12 +21,13 @@ const App = () => {
               alt="Mimosa Retreat"
             />
             <div className="scheme-colors">
-              {firstPalette.colors.map(color => (
+              {firstPalette.colors.map((color) => (
                 <div
                   key={palettes.color}
-                  className="scheme-color" style =
-                  {{ backgroundColor: color }}>
-                    {color}
+                  className="scheme-color"
+                  style={{ backgroundColor: color }}
+                >
+                  {color}
                 </div>
               ))}
             </div>
@@ -59,20 +60,15 @@ const App = () => {
               alt="Ocean Waves"
             />
             <div className="scheme-colors">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
+              {secondPalette.colors.map((color) => (
+                <div
+                  key={palettes.color}
+                  className="scheme-color"
+                  style={{ backgroundColor: color }}
+                >
+                  {color}
+                </div>
+              ))}
             </div>
           </div>
           <div className="palette-info">
