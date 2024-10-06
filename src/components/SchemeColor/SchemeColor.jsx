@@ -1,11 +1,10 @@
+import React from 'react';
 import './SchemeColor.css';
 
-const SchemeColor = (color) => {
-  return (
-    <>
-      <div className="scheme-color">{color}</div>
-    </>
-  );
-};
+const SchemeColor = ({ color }) => (
+  <div className="scheme-color" style={{ backgroundColor: color }}>
+    {color}
+  </div>
+);
 
 export default SchemeColor;

@@ -2,9 +2,8 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { palettes } from './palettes';
 import './style.css';
+import SchemeColor from './components/SchemeColor/SchemeColor';
 
-const firstPalette = palettes[0];
-const secondPalette = palettes[1];
 
 const App = () => {
   return (
@@ -21,14 +20,8 @@ const App = () => {
               alt="Mimosa Retreat"
             />
             <div className="scheme-colors">
-              {firstPalette.colors.map((color) => (
-                <div
-                  key={palettes.color}
-                  className="scheme-color"
-                  style={{ backgroundColor: color }}
-                >
-                  {color}
-                </div>
+              {palettes[0].colors.map((color) => (
+                <SchemeColor key={color} color={color} />
               ))}
             </div>
           </div>
@@ -60,14 +53,8 @@ const App = () => {
               alt="Ocean Waves"
             />
             <div className="scheme-colors">
-              {secondPalette.colors.map((color) => (
-                <div
-                  key={palettes.color}
-                  className="scheme-color"
-                  style={{ backgroundColor: color }}
-                >
-                  {color}
-                </div>
+              {palettes[1].colors.map((color) => (
+                <SchemeColor id={color} color={color} />
               ))}
             </div>
           </div>
