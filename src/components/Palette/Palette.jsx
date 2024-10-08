@@ -1,10 +1,13 @@
+import React from 'react';
 import './Palette.css';
+import SchemeColor from '../SchemeColor/SchemeColor';
+
 
 const Palette = ({ paletteData }) => {
   const { name, image, attribution, colors, direction, description } =
     paletteData;
 
-  const SchemeClass = `palette-scheme palette-sceme--${direction}`;
+  const SchemeClass = `palette-scheme palette-scheme--${direction}`;
   return (
     <div className="palette">
       <div className={SchemeClass}>
@@ -18,13 +21,13 @@ const Palette = ({ paletteData }) => {
       <div className="palette-info">
         <h2>{name}</h2>
         <p>{description}</p>
-        <p>
-          Photo by{' '}
-          <a href={attribution} target="_blank">
-            {attribution}
-          </a>
-          .
-        </p>
+    <p>
+    Photo by{' '}
+       <a href={attribution.url} target="_blank" rel="noopener noreferrer">
+    {attribution.name}
+    </a>
+   .
+    </p>
       </div>
     </div>
   );
