@@ -4,15 +4,14 @@ import Palette from './components/Palette/Palette';
 import { palettes } from './palettes';
 import './style.css';
 
-/*Importing node modules or packages (like React)
-Importing JavaScript modules or components (if any)
-Importing assets (images, SVG, etc.)
-Data or utility imports
-CSS/Styling importsImporting node modules or packages (like React)
-Importing JavaScript modules or components (if any)
-Importing assets (images, SVG, etc.)
-Data or utility imports
-CSS/Styling imports*/
+/*
+Importy(pořadí):
+1.Importing node modules or packages (like React)
+2.Importing JavaScript modules or components (if any)
+3.Importing assets (images, SVG, etc.)
+4.Data or utility imports
+5.CSS/Styling importsImporting node modules or packages (like React)
+*/
 
 const App = () => {
   return (
