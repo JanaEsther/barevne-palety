@@ -1,6 +1,6 @@
 import React from 'react';
-import './Palette.css';
 import SchemeColor from '../SchemeColor/SchemeColor';
+import './Palette.css';
 
 
 const Palette = ({ paletteData }) => {

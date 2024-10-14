@@ -1,8 +1,8 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import Palette from './components/Palette/Palette';
 import { palettes } from './palettes';
 import './style.css';
-import Palette from './components/Palette/Palette';
 
 const App = () => {
   return (
@@ -12,10 +12,7 @@ const App = () => {
       </header>
       <main>
         {palettes.map((palette) => (
-          <Palette
-            key={palette.name}
-            paletteData={palette}
-          />
+          <Palette key={palette.name} paletteData={palette} />
         ))}
       </main>
       <footer>
