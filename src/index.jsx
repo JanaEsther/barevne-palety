@@ -4,6 +4,16 @@ import Palette from './components/Palette/Palette';
 import { palettes } from './palettes';
 import './style.css';
 
+/*Importing node modules or packages (like React)
+Importing JavaScript modules or components (if any)
+Importing assets (images, SVG, etc.)
+Data or utility imports
+CSS/Styling importsImporting node modules or packages (like React)
+Importing JavaScript modules or components (if any)
+Importing assets (images, SVG, etc.)
+Data or utility imports
+CSS/Styling imports*/
+
 const App = () => {
   return (
     <div className="container">
